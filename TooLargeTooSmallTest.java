@@ -43,7 +43,7 @@ public class TooLargeTooSmallTest
     @Test
     public void TestRun1()
     {
-        TooLargeTooSmall tooLarge1 = new TooLargeTooSmall(5);
+        TooLargeTooSmall tooLarge1 = new TooLargeTooSmall(5); //if this is bigger than zero - guess will be zero
         assertEquals(Integer.valueOf(0), tooLarge1.guess(5));
     }
     
@@ -58,7 +58,6 @@ public class TooLargeTooSmallTest
     public void TestRun3()
     {
         TooLargeTooSmall tooLarge1 = new TooLargeTooSmall(2);
-        
         assertEquals(Integer.valueOf(-1), tooLarge1.guess(1));
         assertEquals(Integer.valueOf(0), tooLarge1.guess(2));
         assertEquals(Integer.valueOf(1), tooLarge1.guess(3));
